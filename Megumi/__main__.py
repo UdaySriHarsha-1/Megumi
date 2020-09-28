@@ -21,22 +21,17 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
 PM_START_TEXT = """
-Hi *{}*, my name is *Megumi*!
+Hi *{}*, my name is *Rikka*!
 
 // I am an Anime themed group management bot with a lot of Special Features.
 
 // You can find my list of available commands with /help.
 
-==========================
--> [Megumi's Repo](https://github.com/Unknown746/Megumi)
--> Report [Blessing Support](https://t.me/BlessingSupport) if I go offline
-==========================
-
 // Wanna Add me to your Group? Just click the button below!
 """
 
 HELP_STRINGS = """
-Hey! My name is *Megumi*. I am a group management bot, here to help you get around and keep the order in your groups!
+Hey! My name is *Rikka*. I am a group management bot, here to help you get around and keep the order in your groups!
 
 *Main* commands available:
 
@@ -53,12 +48,11 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-MEGUMI_IMG = "https://telegra.ph/file/aebaa70957ff54d9a816d.jpg"
+MEGUMI_IMG = "https://telegra.ph/file/43ba5a4c2279123e8d91b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Megumi is hosted on one of Tiger's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+Rikka is hosted on one of Tiger's Servers and doesn't require any donations as of now but \
+You can donate to the original writer of the Base code, Paul"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -161,8 +155,8 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(text="👥 Add Megumi to your group", url="https://t.me/MegumiRobot?startgroup=new")],
-                 [InlineKeyboardButton(text="❓ Help", callback_data="help_back"),InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/BlessingSupport")
+                    InlineKeyboardButton(text="👥 Add Megumi to your group", url="https://t.me/rikkarobot?startgroup=new")],
+                 [InlineKeyboardButton(text="❓ Help", callback_data="help_back"),InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/UdaySriHarsha")
                 ]]))
     else:
         update.effective_message.reply_text("Hey there! I'm alive.")
